@@ -1,1 +1,1 @@
-Potfolio website showcasing my work and achievements.
+Portfolio website showcasing my work and achievements.
