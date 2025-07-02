@@ -1,2 +1,1 @@
-# JustAPortfolio.github.io
-Portfolio website to showcase my work and achievements.
+Potfolio website showcasing my work and achievements.
