@@ -912,6 +912,8 @@
                     <h4>Technologies Used</h4>
                     <div class="modal-tech" id="modal-tech"></div>
                     <a id="modal-github-link" href="#" target="_blank" class="cta-button" style="pointer-events: auto !important;">View on GitHub</a>
+                    <!-- New live demo button -->
+                    <a id="modal-live-link" href="#" target="_blank" class="cta-button secondary-button" style="pointer-events: auto !important; margin-left: 10px; display: none;">Live Demo</a>
                 </div>
             </div>
         </div>
@@ -971,7 +973,7 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>Engineering the Future of Robotics</h3>
-                <p>Welcome to my digital space! I'm Aayush Vishnoi, a passionate Master of Technology (MTech) student in Automation and Robotics Engineering at the Defense Institute of Advanced Technology (DRDO DIAT). My journey is about transforming intelligent systems from concept to reality, bridging cutting-edge software with tangible hardware. My ultimate mission is to contribute to synthetic cognition that mirrors and enhances human intelligence in the physical realm.</p>
+                <p>Welcome to my digital space! I'm Aayush Vishnoi, a passionate Master of Technology (MTech) student in Automation and Robotics Engineering at the Defense Institute of Advanced Technology (DRDO DIAT). My journey is about transforming intelligent systems from concept to reality, bridging cutting-edge software with tangible hardware. My ultimate mission: engineering synthetic cognition that mirrors and enhances human intelligence in the physical realm.</p>
                 <p>With a robust foundation in Computer Science Engineering from Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), I bring over two years of expertise in software engineering and automation. My specialization includes python development, algorithms, computer vision, database management, data collection, and advanced machine learning. I actively seek opportunities in Machine Learning, Computer Vision, Data Engineering, and Python Development to apply my skills and push technological boundaries.</p>
                 <p>My journey and interests converge on engineering a smarter tomorrow. I am driven by robotics and AI's potential to solve real-world problems and enhance human capabilities. I believe in continuous learning, iterative improvement, and collaboration. My goal is to leverage my skills and passion to contribute to impactful projects, transforming complex ideas into practical, intelligent, and autonomous realities. I am eager to connect with others to advance robotics, AI/ML, and software development.</p>
                 <p>My life outside of coding and robotics is vibrant and diverse.
@@ -1097,8 +1099,9 @@
         <div class="social-links">
             <a href="https://github.com/JustA3DObject" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/aayush-v-5a6a8a223" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/justa3dobject"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/justa3dobject" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/aayush.v_/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linktr.ee/justanother3dobject" target="_blank"><i class="fab fa-linktree"></i></a> <!-- Added Linktree -->
         </div>
         <p class="copyright">© 2025 Aayush Vishnoi. Designed and built with ❤️</p>
     </footer>
@@ -1466,7 +1469,7 @@
                         response = "Aayush Vishnoi is a passionate Master of Technology (MTech) student in Automation and Robotics Engineering. He specializes in Python development, algorithms, computer vision, database management, data collection, and advanced machine learning.";
                         break;
                     case 'projects':
-                        response = "Featured projects: \n1. News Validator\n2. Profia Portfolio Generator\n3. Connect Four Game\n4. Neural Networks\n5. Attendance System\n6. Stereo Camera Calibration\n7. DevFriends\n8. Coin Counter\nType 'project [number]' for details";
+                        response = "Featured projects: \n1. News Validator\n2. Profia Portfolio Generator\n3. Connect Four Game\n4. Neural Networks\n5. Attendance System\n6. Stereo Camera Calibration\n7. DevFriends\n8. Coin Counter\n9. ToDo List App\n10. Connect Four\n11. SocialSpace\nType 'project [number]' for details";
                         break;
                     case 'project 1':
                         response = "News Validator: A web application to validate news articles using Natural Language Processing.";
@@ -1491,6 +1494,15 @@
                         break;
                     case 'project 8':
                         response = "Coin Counter: A Python-based application for counting coins using computer vision.";
+                        break;
+                    case 'project 9':
+                        response = "ToDo List App: A simple and intuitive web-based ToDo List application.";
+                        break;
+                    case 'project 10':
+                        response = "Connect Four: A classic Connect Four game with a playable AI opponent.";
+                        break;
+                    case 'project 11':
+                        response = "SocialSpace: A social media platform for connecting with friends and sharing updates.";
                         break;
                     case 'contact':
                         response = "Contact methods: \nEmail: 987.aayush.654@gmail.com\nGitHub: github.com/JustA3DObject\nLinkedIn: linkedin.com/in/aayush-v-5a6a8a223";
@@ -1542,6 +1554,7 @@
         const modalTech = document.getElementById('modal-tech');
         const modalTechTags = document.getElementById('modal-tech-tags');
         const modalGithubLink = document.getElementById('modal-github-link');
+        const modalLiveLink = document.getElementById('modal-live-link'); // Defined modalLiveLink
         const projectsGrid = document.getElementById('projectsGrid');
 
         // Project data
@@ -1552,7 +1565,8 @@
                 details: "Developed a Flask-based web application that uses machine learning models and NLP techniques to determine the authenticity of news articles. Features a user-friendly interface for inputting news text and receiving validation results.",
                 tech: ["Python", "Flask", "NLP", "Machine Learning", "Scikit-learn", "NLTK"],
                 tags: ["Python", "Flask", "NLP", "ML"],
-                github: "https://github.com/JustA3DObject/News-Validator"
+                github: "https://github.com/JustA3DObject/News-Validator",
+                live: "https://aletheia.pythonanywhere.com/" // Added live link
             },
             {
                 title: "Profia Portfolio Generator",
@@ -1560,7 +1574,8 @@
                 details: "Built a Python/Django application that allows users to input their project details, skills, and experience to automatically generate a clean and professional online portfolio. Supports various templates and customization options.",
                 tech: ["Python", "Django", "HTML", "CSS", "JavaScript", "Web Development"],
                 tags: ["Python", "Django", "Web Dev"],
-                github: "https://github.com/JustA3DObject/profia-portfolio-generator"
+                github: "https://github.com/JustA3DObject/profia-portfolio-generator",
+                live: "https://profia-portfolio-generator.vercel.app/" // Added live link
             },
             {
                 title: "Connect Four Game",
@@ -1600,7 +1615,8 @@
                 details: "Developed a full-stack social media application specifically for developers. Features include user profiles, project sharing, direct messaging, and a forum for discussions. Built using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
                 tags: ["React.js", "Node.js", "MongoDB", "Social Media"],
                 tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "Social Media"],
-                github: "https://github.com/JustA3DObject/DevFriends"
+                github: "https://github.com/JustA3DObject/DevFriends",
+                live: "https://devfr1ends.pythonanywhere.com/" // Added live link
             },
             {
                 title: "Coin Counter",
@@ -1609,6 +1625,33 @@
                 tech: ["Python", "OpenCV", "Computer Vision", "Image Processing"],
                 tags: ["Python", "OpenCV", "CV"],
                 github: "https://github.com/JustA3DObject/Coin-Counter"
+            },
+            {
+                title: "ToDo List App",
+                description: "A simple and intuitive web-based ToDo List application.",
+                details: "Developed a responsive ToDo List application with features like adding, deleting, and marking tasks as complete. Utilizes a clean user interface for efficient task management.",
+                tech: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
+                tags: ["Python", "Flask", "Web App"],
+                github: "https://github.com/JustA3DObject/ToDo-List-App",
+                live: "https://myeverydaytodolist.pythonanywhere.com/"
+            },
+            {
+                title: "Connect Four",
+                description: "A classic Connect Four game with a playable AI opponent.",
+                details: "Re-implemented the classic Connect Four game. Play against a friend or challenge the AI opponent. The AI uses a basic search algorithm for strategic moves.",
+                tech: ["HTML", "CSS", "JavaScript", "Game Development"],
+                tags: ["HTML", "CSS", "JS", "Game"],
+                github: "https://github.com/JustA3DObject/Connect-Four",
+                live: "https://connect-four-justa3dobject.vercel.app/"
+            },
+            {
+                title: "SocialSpace",
+                description: "A social media platform for connecting with friends and sharing updates.",
+                details: "A full-fledged social media application enabling users to create profiles, post updates, comment, like, and interact with other users. Features user authentication and a real-time feed.",
+                tech: ["Python", "Django", "HTML", "CSS", "JavaScript", "Database"],
+                tags: ["Python", "Django", "Social Media"],
+                github: "https://github.com/JustA3DObject/SocialSpace",
+                live: "https://socialspace.pythonanywhere.com/"
             }
         ];
         
@@ -1642,6 +1685,14 @@
                     modalDescription.textContent = project.description;
                     modalDetails.textContent = project.details;
                     modalGithubLink.href = project.github;
+                    
+                    // Conditionally show/hide live demo link
+                    if (project.live) {
+                        modalLiveLink.href = project.live;
+                        modalLiveLink.style.display = 'inline-block';
+                    } else {
+                        modalLiveLink.style.display = 'none';
+                    }
                     
                     // Update tech tags in modal header
                     modalTechTags.innerHTML = '';
